@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h2 class="header_text">Register member</h2>
+        </div>
+
+        <div id="content">
+
+            <form>
+                <table>
+
+                    <tr>
+                        <td> <label>Username:</label></td>
+                        <td><input type="text" name="username" id="username" placeholder="User name" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Password:</label></td>
+                        <td><input type="password" name="password" id="password" placeholder="Password" required>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirm Password:</label></td>
+                        <td> <input type="password" id="repassword" name="repassword" placeholder="Confirm Password" required>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td><label>Phone</label></td>
+                        <td> <input type="text" id="phone" name="phone" required></td>
+                        <!-- pattern="0+[1-9]{11}" required -->
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td> <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <label class="check">Female</label>
+                            <input type="radio" style="height: 20px; width: 20px" name="check">
+
+                            <label class="check1">Male</label>
+                            <input type="radio" style="height: 20px; width: 20px" name="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="submit" class="submit submit1" value="Register" onclick="fucn();">
+                            <input type="reset" class="submit submit2" value="clear">
+                        </td>
+
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function data(id) {
+            return document.getElementById(id).value
+        }
+
+        function fucn() {
+            var test = "true"
+
+            if (data("username") == "") {
+                test = "false"
+                alert("Hãy nhập user name")
+            }
+            if (data("password") == "") {
+                test = "false"
+                alert("Hãy nhập password")
+            }
+            if (data("repassword") == "") {
+                test = "false"
+                alert("Hãy nhập Confirm Password")
+            }
+            if (data("password") != data("repassword")) {
+                test = "false"
+                alert("password và Confirm Password phải giống nhau")
+            }
+            var phone = data('phone');
+            if (phone != '' && !/^[0-9]{10}$/.test(phone)) {
+                test = "false"
+                alert('Vui lòng kiểm tra lại Phone');
+            }
+            if (data("phone") == "") {
+                test = "false"
+                alert("Hãy nhập Phone")
+            }
+            if (data("email") == "") {
+                test = "false"
+                alert("Hãy nhập email")
+            }
+
+
+
+            if (test != "false") {
+                alert("Register successfully!")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
