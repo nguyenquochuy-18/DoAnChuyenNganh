@@ -1,0 +1,251 @@
+	body {
+	    font-family: Roboto, sans-serif;
+	    background-color: #f3f3f3;
+	    font-size: 14px;
+	    margin: 0;
+	    color: black;
+	}
+	
+	header {
+	    display: inline-block;
+	    position: relative;
+	    width: 100%;
+	    height: 100px;
+	    background-color: #292929;
+	    color: #DCDCDC;
+	}
+	
+	header>h3 {
+	    padding-left: 600px;
+	}
+	
+	header>input {
+	    margin-left: 600px;
+	    width: 270px;
+	    height: 25px;
+	}
+	
+	header>button {
+	    width: 75px;
+	    height: 25px;
+	}
+	
+	header>img {
+	    position: absolute;
+	    left: 200px;
+	    top: 20px;
+	}
+	
+	header>div {
+	    position: absolute;
+	    left: 1250px;
+	    top: -10px;
+	}
+	
+	.login-register {
+	    width: 20vw;
+	    display: flex;
+	    justify-content: center;
+	}
+	
+	.login-register ul li {
+	    display: inline-block;
+	    padding: 15px;
+	    position: relative;
+	    transition: box-shadow 0.1s;
+	    width: 100px;
+	    border: 5px;
+	    border-radius: 5px;
+	    text-align: center;
+	    background-color: rgb(17, 56, 56);
+	}
+	
+	.login-register ul li:hover {
+	    box-shadow: rgba(238, 234, 234, 0.35) 0px 5px 15px;
+	}
+	
+	.login-register ul li a {
+	    text-decoration: none;
+	    font-size: 1.25em;
+	    color: white;
+	}
+	
+	nav {
+	    width: 100%;
+	    height: 50px;
+	    background-color: #666;
+	    float: left;
+	}
+	
+	section {
+	    width: 1200px;
+	    height: 1200px;
+	    margin: auto;
+	    background-color: white;
+	}
+	
+	aside {
+	    float: left;
+	    width: 250px;
+	    height: 1200px;
+	    background-color: white;
+	}
+	
+	footer {
+	    width: 100%;
+	    height: 100px;
+	    background-color: #DCDCDC;
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	
+	#navWrap {
+	    width: 1200px;
+	    margin: auto;
+	}
+	
+	#navWrap>ul {
+	    list-style-type: none;
+	    padding: 0;
+	    float: left;
+	    width: 100%;
+	    margin: auto;
+	}
+	
+	#navWrap>ul>li>a {
+	    margin-top: 5px;
+	    text-decoration: none;
+	    display: block;
+	    float: left;
+	    height: 30px;
+	    padding: 5px 10px;
+	    line-height: 30px;
+	    border: 0.5px solid white;
+	    color: white;
+	    width: 90px;
+	}
+	
+	#navWrap>ul>li>a:hover {
+	    background-color: #4d4d4d
+	}
+	
+	.new-product {
+	    list-style-type: none;
+	    padding: 0;
+	    margin-top: 10px;
+	}
+	
+	.new-product>li {
+	    width: 100%;
+	    height: 80px;
+	    border-bottom: 1px solid lightgray;
+	    float: left;
+	}
+	
+	.new-product__item__img>img {
+	    width: 50px;
+	    height: 50px;
+	    float: left;
+	    margin-top: 5px;
+	    padding-left: 10px;
+	}
+	
+	.new-product__item__img>span {
+	    margin-top: 5px;
+	    width: 60%;
+	    padding-left: 10px;
+	    float: left;
+	}
+	
+	.block_aside {
+	    margin-top: 10px;
+	    float: left;
+	    position: relative;
+	    border: 1px solid #ccc;
+	    width: 100%;
+	    border-radius: 5px;
+	}
+	
+	.titleNews {
+	    float: left;
+	    width: 100%;
+	    height: 30px;
+	    margin-bottom: 0;
+	    font-size: 16px;
+	    font-weight: bold;
+	    padding-top: 5px;
+	    text-align: center;
+	    background-color: #DCDCDC
+	}
+	
+	.class_content {
+	    width: 930px;
+	    padding: 0 10px;
+	    float: left;
+	    height: 1200px;
+	    background-color: white;
+	}
+	
+	.title_content {
+	    padding: 10px;
+	    width: 100%;
+	    height: 30px;
+	    float: left;
+	    line-height: 30px;
+	    font-size: 20px;
+	    font-weight: bold;
+	}
+	
+	.class_product {
+	    width: 296px;
+	    height: 300px;
+	    margin: 5px;
+	    float: left;
+	    border-radius: 5px;
+	    border: 1px solid lightgray;
+	    transition: box-shadow 0.1s;
+	    cursor: pointer;
+	}
+	
+	.class_product:hover {
+	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+	
+	.news_item {
+	    float: left;
+	}
+	
+	.news_item>li>a {
+	    color: gray;
+	}
+	
+	.product_img {
+	    padding: 10px;
+	    position: relative;
+	    left: 10%;
+	}
+	
+	.product_name,
+	.product_price {
+	    width: 100%;
+	    float: left;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	
+	.product_price {
+	    padding-top: 10px;
+	    color: red;
+	    font-size: 16px;
+	}
+	
+	.new-product__title {
+	    color: black;
+	}
+	
+	footer>p {
+	    display: block;
+	    padding-top: 20px;
+	    width: 1200px;
+	    margin: auto;
+	}

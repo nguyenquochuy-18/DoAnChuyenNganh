@@ -1,0 +1,15 @@
+.main-header {
+    top: calc(2.93725rem + 1px);
+    margin-top: 3.5rem;
+    margin-top: calc(2.93725rem + 1px);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1033;
+    position: static;
+    margin-right: .2rem;
+    height: 33px;
+    margin-left: 0;
+    transition: margin-left .3s ease-in-out;
+}
